@@ -1,0 +1,22 @@
+
+.cores li:nth-child(1) {
+    background-color: #00072D; /* Cor 1 */
+}
+
+.cores li:nth-child(2) {
+    background-color: #605F5E; /* Cor 2 */
+}
+
+.cores li:nth-child(3) {
+    background-color: #F4FAFF; /* Cor 3 */
+}
+
+.cores li:nth-child(4) {
+    background-color: #4D41F1; /* Cor 4 */
+}
+
+.cores li:nth-child(5) {
+    background-color: #709BFF; /* Cor 5 */
+}
+
+
