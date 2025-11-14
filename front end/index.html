@@ -1,29 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title> AnimeWorld </title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Nav Bar -->
+        <a href="#" class="navbar-brand mx-4">AnimeWorld</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-    <h2>Atividade 3</h2>
-    <p>Esta atividade demonstra o uso da tag de âncora para vincular uma página a outra.</p>
-    <a href="pages/Atividade 3/atividade-3.html">Clique aqui para ir para a Atividade 03</a>
+            <span class="navbar-toggler-icon"></span>
 
-    <h2>Atividade 4</h2>
-    <p>Esta atividade demonstra o uso das tags relacionadas a audio e video</p>
-    <a href="pages/Atividade 4/atividade-4.html">Clique aqui para ir para a Atividade 04</a>
+        </button>
 
-    <h2>Atividade 5</h2>
-    <p>Esta atividade tem como objetivo definir uma paleta de cores para o site.</p>
-    <a href="pages/Atividade 5/atividade-5.html">Clique aqui para ir para a Atividade 05</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <h2>Atividade 10</h2>
-    <p>Pagina teste para usar o bootstrap.</p>
-    <a href="pages/Atividade 10/atividade-10.html">Clique aqui para ir para a Atividade 10</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav> 
+
+    <div class="container">
+
+        <div class="row"> <!-- Cards -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/imgs/bones.jpg" alt="logo estudio bones">
+                    <div class="card-body">
+                        <p class="card-text">Fundado por ex-integrantes da Sunrise, o Bones se tornou sinônimo de excelência em animações de ação. Seu estilo dinâmico e expressivo define o visual de alguns dos animes shounen mais populares e bem produzidos da atualidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/imgs/ghibli.jpg" alt="logo estudio ghibli">
+                    <div class="card-body">
+                        <p class="card-text"> O estúdio revolucionou a animação com visuais belíssimos, trilhas sonoras marcantes e um estilo de narrativa único, que combina experimentação e sensibilidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/imgs/toei.jpg" alt="logo estudio toei">
+                    <div class="card-body">
+                        <p class="card-text">A veterana Toei Animation é um dos pilares da história do anime. Com décadas de experiência, ela é responsável por alguns dos maiores clássicos e franquias mais duradouras do Japão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row"> <!-- titulo  -->
+            <h1 class="h1 text-center">História dos Estúdios de Animação</h1>
+        </div>
+
+        <div class="row"> <!-- estoria 1 -->
+            <p class="lead"> O anime moderno, como o conhecemos hoje, começou a ganhar forma nas décadas de 1950 e 1960. Nessa época, o Japão passou por uma transformação econômica e cultural que ajudou a solidificar a animação como uma indústria significativa. <br><br>
+
+            Foi durante esse período que a animação no Japão começou a se distanciar das influências ocidentais e desenvolver uma identidade própria. <br><br>
+
+            O grande marco para o anime moderno foi a criação de Astro Boy (Tetsuwan Atom), em 1963. Criado por Osamu Tezuka, considerado o “Deus do Mangá”, Astro Boy foi a primeira série de anime que alcançou uma popularidade nacional e estabeleceu os padrões de animação e narrativa que seriam seguidos por muitas produções posteriores. <br><br>
+
+            A história de Astro Boy, que contava as aventuras de um robô com aparência humana, abordou temas de moralidade, humanidade e ética, tornando-se um sucesso tanto entre os jovens quanto os adultos. <br><br>
+
+            Tezuka foi fundamental na criação do estilo visual do anime, com os olhos grandes, as expressões exageradas e as linhas simples, que se tornaram marca registrada das animações japonesas. <br><br>
+
+            A popularidade de Astro Boy também levou à criação de outros animes de sucesso, como Kimba, o Leão Branco, e ajudou a definir o que viria a ser o “anime clássico” da década de 1960.</p>
+        </div>
+
+
+    </div>
 </body>
 </html>
