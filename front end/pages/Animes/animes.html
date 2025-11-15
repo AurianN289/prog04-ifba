@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> AnimeWorld </title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Nav Bar -->
+        <a href="../../index.html" class="navbar-brand mx-4">AnimeWorld</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto">
+                <!-- pagina sobre animes -->
+                <li class="nav-item">
+                    <a href="animes.html" class="nav-link">Animes</a>
+                </li>
+
+                <!-- pagina sobre as animações e estudios -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Animações</a>
+                </li>
+
+                <!-- pagina para salvar cenas e frases interessantes sobre animes -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Galeria</a>
+                </li>
+
+                <!-- pagina para catalogar todos os animes assistidos -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Catalogação</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav> 
+
+    <div class="container">
+
+        <div class="row"> <!-- titulo  -->
+            <h1 class="h1 text-center">Animes que a Pessoa Gosta</h1>
+        </div>
+
+        <div class="row"> <!-- estoria 1 -->
+            <p class="lead"> 
+            Gosto muito de animes; eles sempre foram uma parte importante do meu dia a dia. Adoro como cada história consegue me prender, seja pela ação, pela comédia ou pelos momentos emocionantes que fazem a gente pensar na vida. Sempre que encontro um anime novo, sinto aquela empolgação de descobrir personagens diferentes, mundos criativos e trilhas sonoras incríveis. É algo que realmente me relaxa e me inspira ao mesmo tempo.</p>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="../../assets/imgs/banner one piece.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> One PIece </h5>
+                        <p class="card-text"> Uma aventura épica que segue Monkey D. Luffy e sua tripulação em busca do tesouro lendário conhecido como One Piece. O anime combina ação, humor e momentos emocionantes enquanto explora amizade, liberdade e grandes batalhas em um mundo cheio de ilhas incríveis. </p>
+                        <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-title="Meta" data-bs-content="Manga Capitulos: 1144; Anime Episodios: 1149"> Meta Informações </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../../assets/imgs/sangatsu banner.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sangatsu no Lion </h5>
+                        <p class="card-text"> Uma história sensível sobre Rei Kiriyama, um jovem jogador profissional de shogi que enfrenta solidão, traumas e dúvidas internas. O anime mistura drama e esperança, mostrando sua jornada para criar conexões verdadeiras e reencontrar um sentido na vida. </p>
+                        <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-title="Meta" data-bs-content="Manga Capitulos: x; Anime Episodios: x"> Meta Informações </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../../assets/imgs/hyouka banner.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Hyouka </h5>
+                        <p class="card-text"> Um anime de mistério escolar que acompanha Oreki Houtarou, um estudante preguiçoso que prefere economizar energia, mas acaba envolvido em casos intrigantes por causa da curiosa e energética Chitanda Eru. A série encanta pelo clima calmo, charme dos personagens e enigmas leves e inteligentes. </p>
+                        <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-title="Meta" data-bs-content="Manga Capitulos: x; Anime Episodios: x"> Meta Informações </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
