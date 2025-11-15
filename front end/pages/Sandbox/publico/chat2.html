@@ -28,7 +28,7 @@
 
         socket.on("mensagem", (msg) => {
             const div = document.getElementById("chat");
-            div.innerHTML += `<p><b>${msg.autor}:</b> ${msg.texto}</p> <br>`;
+            div.innerHTML += `<p><b>${msg.autor}:</b> ${msg.texto}</p>`;
         });
     </script>
 </body>
