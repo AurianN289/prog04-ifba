@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat 2</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <input id="msg" placeholder="Digite sua mensagem..." />
+    <button onclick="enviar()">Enviar</button>
+
+    <div id="chat"></div>
+
+
+    <script>
+        const socket = io();
+
+        function enviar(){
+            const texto = document.getElementById("msg").value; //pego o texto q qro enviar
+
+            socket.emit("mensagem", {
+                autor: "Chat 2",
+                texto: texto
+            }); //emito um evento chamado mensagem pro servidor sendo o autor 1
+        }
+
+        socket.on("mensagem", (msg) => {
+            const div = document.getElementById("chat");
+            div.innerHTML += `<p><b>${msg.autor}:</b> ${msg.texto}</p> <br>`;
+        });
+    </script>
+</body>
+</html>
